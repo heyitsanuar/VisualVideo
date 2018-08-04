@@ -1,0 +1,26 @@
+.introduce{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 540px;
+    background: #faf3ed;
+
+    &__text{
+        text-align: center;
+        width: 470px;
+    }
+
+    &__subtitle{
+        margin-bottom: 27px;
+    }
+
+    &__title{
+        margin-bottom: 43px;
+    }
+
+    &__text{
+        margin-bottom: 55px;
+    }
+
+}
