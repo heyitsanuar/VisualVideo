@@ -1,0 +1,65 @@
+.events{
+    margin-top: 70px;
+
+    &__recuerdos{
+        background: #f8efba;
+        width: 877px;
+        height: 670px;
+        
+        &-text{
+            padding-top: 165px;
+            padding-left: 95px;
+            width: 237px;
+        }
+    }
+
+    &__examples{
+        height: 633px;
+    }
+
+    &__images{
+        display: flex;
+
+        &-item{
+            position: relative;
+
+            &--left{
+                top: -250px;
+                width: 460px;
+                height: 618px;
+            }
+
+            &--center{
+                top: 110px;
+                left: -205px;
+                width: 579px;
+                height: 516px;
+            }
+
+            &--right{
+                top: -110px;
+                width: 760px;
+                height: 540px;
+                right: -530px;
+            }
+        }
+
+    }
+
+    &__info{
+        position: relative;
+        top: -425px;
+        right: 100px;
+        width: 310px;
+        text-align: right;
+        float: right;
+    }
+
+    &__subtitle{
+        margin-bottom: 23px;
+    }
+
+    &__title{
+        margin-bottom: 44px;
+    }
+}
