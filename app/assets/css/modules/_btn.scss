@@ -13,4 +13,20 @@
         height: 55px;
         left: 5px;
     }
+
+    &__service{
+        position: absolute;
+        bottom: 0;
+        background: #ffffff;
+
+        &--left{
+            left: 0;
+            transform: translate(-50%,50%);
+        }
+
+        &--right{
+            right: 0;
+            transform: translate(50%,50%);
+        }
+    }
 }
