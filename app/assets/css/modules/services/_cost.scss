@@ -1,0 +1,51 @@
+.cost{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    &__item{
+        width: 23%;
+        height: 485px;
+        flex-wrap: wrap;
+        font-weight: 600;
+        text-align: center;
+        transition: all .3s ease;
+
+        &:hover{
+            @include atLarge{
+                box-shadow: 0 0 15px rgba($mainBlack, 0.5);
+            }
+        }
+    }
+
+    &__title{
+        display: block;
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 38px;
+    }
+
+    &__price{
+        font-size: 32px;
+        width: 100%;
+        height: 136px;
+    }
+
+    &__specs{
+        margin-top: 50px;
+        
+        ul{
+            text-align: left;
+        }
+    }
+
+    &--basic-strong{ color: $strongBasic; }
+    &--premium-strong{ color: $strongPremium; }
+    &--sesion-strong{ color: $strongSesion; }
+    &--ultimate-strong{ color: $strongUltimate; }
+    &--basic-tiny{ background: $tinyBasic; }
+    &--premium-tiny{ background: $tinyPremium; }
+    &--sesion-tiny{ background: $tinySesion; }
+    &--ultimate-tiny{ background: $tinyUltimate; }
+}
