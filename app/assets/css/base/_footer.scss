@@ -1,0 +1,89 @@
+.footer{
+    margin-top: 0;
+    
+    @include atSmall{
+        margin-top: 6.9375rem;
+    }
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    height: 25rem;
+    
+    @include atSmall{
+        flex-wrap: nowrap;        
+        height: 31.25rem;
+    }
+    
+    &__image{
+        display: none;
+
+        @include atMedium{
+            display: block;
+            width: 50%;
+        }
+        
+        @include atLarge{
+            width: 58.33%;
+        }
+    }
+
+    &__form{
+        height: 31.25rem;
+        width: 100%;
+        background: #f8efba;
+        
+        @include atMedium{
+            height: 100%;
+            width: 50%;
+        }
+        
+        @include atLarge{
+            width: 41.66%;
+        }
+
+        &-container{
+            width: 65%;
+            text-align: center;
+
+            @include atSmall{
+                width: 50%;
+            }
+        }
+    }
+}
+
+.social{
+    margin-top: 6.25rem;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+
+    @include atSmall{
+        margin-top: auto;
+    }
+
+    &__icon{
+        font-size: 1.375rem;
+        color: $mainBlack;
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 50%;
+        transition: all .3s ease;
+        
+        @include atSmall{
+            font-size: 1.75rem;
+            margin: 0 0.625rem;
+        }
+
+        &:hover{
+            color: #ffffff;
+            
+            &.social__icon--facebook{ background: $facebook; }
+            &.social__icon--twitter{ background: $twitter; }
+            &.social__icon--instagram{ background: $instagram; }
+            &.social__icon--youtube{ background: $youtube; }
+        }
+
+    }
+}
