@@ -1,30 +1,118 @@
 .header{
     width: 100%;
     height: 100vh;
-    min-height: 700px;
+    min-height: 43.75rem;
 
     &__menu{
         position: fixed;
         width: 100%;
+        z-index: 1000;
+
+        &--scrolled{
+            background: #ffffff;
+
+            a{
+                color: $mainBlack;
+            }
+        }
     }
     
     &__logo{
-        padding-top: 30px;
         display: flex;
-        justify-content: center;
-        margin-bottom: 35px;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2.1875rem;
+        padding-top: 1.875rem;
+        
+        @include atSmall{
+            justify-content: center;
+            align-content: flex-start;
+        }
+
+        &--expanded{
+            margin-right: 3.75rem;
+
+            @include atSmall{
+                margin-right: 8.125rem;
+            }
+        }
+        
+        &--container{
+            padding-top: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
     }
     
     &__navigation{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 80%;
+        background: #ffffff;
         display: flex;
         justify-content: center;
-        padding-bottom: 10px;
+        padding-bottom: 0.625rem;
+        transition: all .3s ease;
+
+        nav{
+            padding-top: 2.5rem;
+
+            @include atSmall{
+                padding-top: 0;
+            }
+        }
+
+        @include atSmall{
+            position: static;
+            height: auto;
+            width: auto;
+            background: none;
+        }
+
+        &--is-expanded{
+            left: 0;
+        }
+
+        &--no-padding{
+            padding-bottom: 0;
+        }
     }
 
     &__links{
-        color: #ffffff;
-        padding-bottom: 10px;
-        margin-right: 50px;
+        display: block;
+        color: $mainBlack;
+        margin-right: 1.5625rem;
+        margin-left: 1.5625rem;
+        padding-bottom: 1.25rem;
+        
+        @include atSmall{
+            display: inline;
+            color: #ffffff;
+            padding-bottom: 0.625rem;
+        }
     }
 
+    &__btn-menu{
+        font-size: 1.25rem;
+        
+        &--open{
+            color: #ffffff;
+            margin-right: 1.25rem;
+        }
+        
+        &--close{
+            float: right;
+            color: $mainBlack;
+            margin-right: -1.875rem;
+        }
+
+        &--black{
+            color: $mainBlack;
+        }
+
+        @include atSmall{
+            display: none;
+        }
+    }
 }

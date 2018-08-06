@@ -17,14 +17,16 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__menu">
-            <div class="header__logo">
+        <div id="header-menu" class="header__menu">
+            <div id="logo-container" class="header__logo">
                 <a href="#">
-                    <img src="assets/img/logo/transparent-white.png" alt="" style="height: 52px;">
+                    <img id="header-logo" src="assets/img/logo/transparent-white.png" alt="" style="height: 52px;">
                 </a>
+                <i id="header-btn-open" class="header__btn-menu header__btn-menu--open fas fa-bars"></i>
             </div>
-            <div class="header__navigation">
+            <div id="header-nav" class="header__navigation">
                 <nav>
+                    <i id="header-btn-close" class="header__btn-menu header__btn-menu--close fas fa-times"></i>
                     <a href="#" class="header__links">INICIO</a>
                     <a href="#" class="header__links">SERVICIOS</a>
                     <a href="#" class="header__links">GALERIA</a>
@@ -34,7 +36,7 @@
         </div>
         <img src="assets/img/heroes/home/hero.png" alt="" class="image">
     </header>
-    <section class="landing-page">
+    <section id="landing-page" class="landing-page">
         <section class="introduce flex-center">
             <div class="introduce__text container">
                 <h3 class="introduce__subtitle text--s-black">LO QUE HACEMOS</h3>
@@ -124,5 +126,8 @@
             </div>
         </section>
     </section>
+    <!-- build:js assets/js/App.js -->
+    <script src="temp/js/App.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
