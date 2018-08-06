@@ -1,6 +1,11 @@
+/*BASE*/
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_utils';
 @import 'base/_global';
 @import 'base/_header';
+/*MODULES*/
+@import 'modules/_title';
+@import 'modules/_btn';
 @import 'modules/_large-hero';
+@import 'modules/_home';

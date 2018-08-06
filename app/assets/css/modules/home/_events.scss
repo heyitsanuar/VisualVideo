@@ -1,0 +1,159 @@
+.events{
+
+    @include atLarge{
+        margin-top: 4.375rem;
+    }
+
+    &__recuerdos{
+        background: #f8efba;
+        text-align: center;
+
+        @include atLarge{
+            width: 54.8125rem;
+            height: 34.375rem;
+            text-align: left;
+        }
+
+        @include atExtraLarge{
+            height: 41.875rem;
+        }
+        
+        &-text{
+            font-size: 2.25rem;
+            padding-top: 3.125rem;
+            width: 70%;
+            margin: auto;
+
+            @include atMedium{
+                font-size: 2.75rem;
+                width: 14.8125rem;
+                padding-top: 6.25rem;
+                padding-left: 5.9375rem;
+                margin: 0;
+            }
+
+            @include atExtraLarge{
+                padding-top: 10.3125rem;
+            }
+
+        }
+    }
+
+    &__examples{
+        margin-top: -0.25rem;
+        
+        @include atLarge{
+            margin-top: 0;
+            height: 39.5625rem;
+        }
+    }
+
+    &__images{
+        display: flex;
+
+        &-item{
+            
+            @include atMedium{
+                position: relative;
+            }
+
+            &--left{
+
+                @include atMedium{
+                    top: -16.875rem;
+                    width: 15.625rem;
+                    height: 21.25rem;
+                }
+
+                @include atLarge{
+                    width: 22.5rem;
+                    height: 26.125rem;
+                }
+
+                @include atExtraLarge{
+                    width: 28.75rem;
+                    height: 38.625rem;
+                }
+            }
+
+            &--center{
+
+                @include atMedium{
+                    width: 18.75rem;
+                    height: 13.75rem;
+                    top: -6.25rem;
+                    left: -3.125rem;
+                }
+
+                @include atLarge{
+                    top: 6.875rem;
+                    left: -12.8125rem;
+                    width: 23.6875rem;
+                    height: 19.75rem;
+                }
+
+                @include atExtraLarge{
+                    width: 36.1875rem;
+                    height: 32.25rem;
+                }
+            }
+
+            &--right{
+                margin-top: 5rem;
+
+                @include atMedium{
+                    top: -11.25rem;
+                    right: -23.75rem;
+                    width: 25rem;
+                    height: 15.625rem;
+                }
+
+                @include atLarge{                    
+                    right: -33.125rem;
+                    width: 35rem;
+                    height: 23.75rem;
+                }
+     
+                @include atExtraLarge{                    
+                    width: 47.5rem;
+                    height: 33.75rem;
+                }
+            }
+        }
+
+    }
+
+    &__info{
+        width: 100%;
+        text-align: center;
+
+        @include atLarge{
+            position: relative;
+            top: -18.75rem;
+            right: 6.25rem;
+            width: 19.375rem;
+            text-align: right;
+            float: right;
+        }
+
+        @include atExtraLarge{
+            top: -26.5625rem;
+        }
+
+        &-text{
+            width: 80%;
+            margin: auto;
+            margin-top: 5rem;
+
+            @include atMedium{
+                margin-top: -6.25rem;
+            }
+            
+            @include atLarge{
+                width: auto;
+                margin: auto;
+                margin-top: 5rem;
+            }
+        }
+    }
+}

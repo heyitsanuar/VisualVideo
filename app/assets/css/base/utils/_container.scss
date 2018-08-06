@@ -6,9 +6,8 @@
     display: flex;
     width: 80%;
 
-    @include atSmall{ width: 90% !important; }
-    @include atMedium{ width: 720px !important; }
-    @include atLarge{ width: 970px !important; }
-    @include atExtraLarge{ width: 1170px !important; }
+    @include atMedium{ max-width: 720px !important; }
+    @include atLarge{ max-width: 970px !important; }
+    @include atExtraLarge{ max-width: 1170px !important; }
 
 }
