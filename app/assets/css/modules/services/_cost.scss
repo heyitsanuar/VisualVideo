@@ -1,39 +1,59 @@
 .cost{
     display: flex;
     justify-content: space-between;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    flex-wrap: wrap;
+
+    @include atSmall{
+        flex-wrap: nowrap;
+        padding-top: 5.625rem;
+        padding-bottom: 5.625rem;
+    }
 
     &__item{
-        width: 23%;
-        height: 485px;
+        width: 100%;
+        height: 27.1875rem;
         flex-wrap: wrap;
         font-weight: 600;
         text-align: center;
         transition: all .3s ease;
+        
+        @include atSmall{
+            width: 23%;
+            height: 30.3125rem;
+        }
 
         &:hover{
-            @include atLarge{
-                box-shadow: 0 0 15px rgba($mainBlack, 0.5);
+            @include atExtraLarge{
+                box-shadow: 0 0 0.9375rem rgba($mainBlack, 0.5);
             }
         }
     }
 
     &__title{
         display: block;
-        font-size: 18px;
+        font-size: 1.125rem;
         width: 100%;
-        margin-bottom: 38px;
+        margin-bottom: 2.375rem;
     }
 
     &__price{
-        font-size: 32px;
+        font-size: 2rem;
         width: 100%;
-        height: 136px;
+        height: 8.5rem;
+
+        @include atSmall{
+            font-size: 1.75rem;
+        }
+
+        @include atMedium{
+            font-size: 2rem;
+        }
     }
 
     &__specs{
-        margin-top: 50px;
+        margin-top: 3.125rem;
         
         ul{
             text-align: left;
