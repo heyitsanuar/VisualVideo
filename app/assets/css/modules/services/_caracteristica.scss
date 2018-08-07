@@ -1,13 +1,32 @@
 .caracteristica{
     display: flex;
-    height: 590px;
+    flex-wrap: wrap;
+    height: 56.25rem;
+
+    @include atSmall{
+        height: 31.25rem;
+    }
+
+    @include atLarge{
+        height: 36.875rem;
+    }
 
     &__image{
-        width: 50%;
+        width: 100%;
+        order: -1;
+
+        @include atSmall{
+            width: 50%;
+            order: 0;
+        }
     }
 
     &__info{
-        width: 50%;
+        width: 100%;
+
+        @include atSmall{
+            width: 50%;
+        }
 
         &--yellow{ background: #ffc048; }
         &--cream{ background: #f8efba; }
@@ -15,11 +34,15 @@
     }
 
     &__content{
-        width: 290px;
+        width: 70%;
         text-align: center;
+        
+        @include atLarge{
+            width: 18.125rem;
+        }
     }
 
     &__title{
-        font-size: 32px;
+        font-size: 2rem;
     }
 }
