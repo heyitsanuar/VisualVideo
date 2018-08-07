@@ -1,0 +1,48 @@
+.caracteristica{
+    display: flex;
+    flex-wrap: wrap;
+    height: 56.25rem;
+
+    @include atSmall{
+        height: 31.25rem;
+    }
+
+    @include atLarge{
+        height: 36.875rem;
+    }
+
+    &__image{
+        width: 100%;
+        order: -1;
+
+        @include atSmall{
+            width: 50%;
+            order: 0;
+        }
+    }
+
+    &__info{
+        width: 100%;
+
+        @include atSmall{
+            width: 50%;
+        }
+
+        &--yellow{ background: #ffc048; }
+        &--cream{ background: #f8efba; }
+        &--baby-blue{ background: #55e6c1; }
+    }
+
+    &__content{
+        width: 70%;
+        text-align: center;
+        
+        @include atLarge{
+            width: 18.125rem;
+        }
+    }
+
+    &__title{
+        font-size: 2rem;
+    }
+}
