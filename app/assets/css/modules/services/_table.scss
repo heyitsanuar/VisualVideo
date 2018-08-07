@@ -2,8 +2,8 @@
     width: 100%;
     margin-bottom: 6.25rem;
 
-    @include atSmall{
-        margin-bottom: auto;
+    @include atLarge{
+        margin-bottom: 10rem;
     }
 
     &__section{
