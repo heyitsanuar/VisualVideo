@@ -1,6 +1,11 @@
 .services{
     text-align: center;
     padding-top: 9.375rem;
+    margin-bottom: 0;
+
+    @include atSmall{
+        margin-bottom: 6.9375rem;
+    }
 
     &__item{
         position: relative;

@@ -1,0 +1,25 @@
+.caracteristica{
+    display: flex;
+    height: 590px;
+
+    &__image{
+        width: 50%;
+    }
+
+    &__info{
+        width: 50%;
+
+        &--yellow{ background: #ffc048; }
+        &--cream{ background: #f8efba; }
+        &--baby-blue{ background: #55e6c1; }
+    }
+
+    &__content{
+        width: 290px;
+        text-align: center;
+    }
+
+    &__title{
+        font-size: 32px;
+    }
+}
