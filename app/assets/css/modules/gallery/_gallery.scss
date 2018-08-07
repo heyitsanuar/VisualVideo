@@ -1,0 +1,58 @@
+.gallery{
+    margin-bottom: 9.375rem;
+
+    &__info{
+        width: 70%;
+
+        @include atSmall{
+            width: 23.75rem;
+        }
+    }
+
+    &__video{
+        width: 100%;
+        margin: auto;
+
+        @include atSmall{
+            width: 51.25rem;
+            height: 28.8125rem;
+        }
+    }
+
+    &__columns-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__column{
+        width: 100%;
+
+        @include atSmall{
+            width: 32%;
+        }
+    }
+
+    &__image{
+        margin-bottom: 0.625rem;
+        height: 11.25rem;
+
+        &--small{
+            @include atSmall{
+                height: 18.125rem;
+            } 
+        }
+
+        &--medium{ 
+            @include atSmall{
+                height: 24.375rem; 
+            }
+        }
+
+        &--large{
+            @include atSmall{
+                height: 11.875rem;
+            }
+        }
+    }
+}
