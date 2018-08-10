@@ -6,6 +6,8 @@ class Slider {
         this.services = $('.services__item');
         this.btnBack = $('.btn__service--right');
         this.btnNext = $('.btn__service--left');
+        this.mobileBack = $('.fa-chevron-left');
+        this.mobileNext = $('.fa-chevron-right');
 
         this.events();
     }
@@ -13,6 +15,8 @@ class Slider {
     events(){
         this.btnNext.click(this.goForward);
         this.btnBack.click(this.goBack);
+        this.mobileBack.click(this.goBack);
+        this.mobileNext.click(this.goForward);
     }
 
     goForward(){
