@@ -24,7 +24,7 @@
         margin-bottom: 2.1875rem;
         padding-top: 1.875rem;
         
-        @include atSmall{
+        @include atMedium{
             justify-content: center;
             align-content: flex-start;
         }
@@ -58,12 +58,12 @@
         nav{
             padding-top: 2.5rem;
 
-            @include atSmall{
+            @include atMedium{
                 padding-top: 0;
             }
         }
 
-        @include atSmall{
+        @include atMedium{
             position: static;
             height: auto;
             width: auto;
@@ -86,7 +86,7 @@
         margin-left: 1.5625rem;
         padding-bottom: 1.25rem;
         
-        @include atSmall{
+        @include atMedium{
             display: inline;
             color: #ffffff;
             padding-bottom: 0.625rem;
@@ -111,7 +111,7 @@
             color: $mainBlack;
         }
 
-        @include atSmall{
+        @include atMedium{
             display: none;
         }
     }
