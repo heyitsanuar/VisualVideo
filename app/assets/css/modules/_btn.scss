@@ -4,6 +4,13 @@
     font-weight: 600;
     border: 1px solid $mainBlack;
     padding: 0.625rem 1.5625rem;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover{
+        background: $mainBlack;
+        color: #ffffff;
+    }
     
     @include atSmall{
         padding: 0.8125rem 3.125rem;

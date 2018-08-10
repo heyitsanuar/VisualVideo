@@ -46,6 +46,7 @@
                 }
                 
             }
+            
         }
 
         &-info{
@@ -92,6 +93,11 @@
                 margin-bottom: 3.125rem;
             }
         }
+
+        &--blue{ background: $tinyBasic; }
+        &--yellow{ background: $tinyPremium; }
+        &--red{ background: $tinySesion; }
+        &--purple{ background: $tinyUltimate; }
     }
 
     &__buttons{
