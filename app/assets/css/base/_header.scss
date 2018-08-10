@@ -1,7 +1,19 @@
 .header{
     width: 100%;
     height: 100vh;
-    min-height: 43.75rem;
+    min-height: 27.5rem;
+
+    @include atSmall{
+        min-height: 35.625rem;
+    }
+
+    @include atMedium{
+        min-height: 40.625rem;
+    }
+
+    @include atLarge{
+        min-height: 43.75rem;
+    }
 
     &__menu{
         position: fixed;
@@ -114,5 +126,43 @@
         @include atMedium{
             display: none;
         }
+    }
+
+    &__info{
+        position: absolute;
+        top: 70%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        z-index: 1;
+    }
+
+    &__title{
+        font-size: 2rem;
+        font-weight: 400;
+        width: 75%;
+        margin: auto;
+        margin-bottom: 2.1875rem;
+
+        @include atSmall{
+            width: 14.375rem;
+        }
+    }
+
+    &__subtitle{
+        font-weight: 400;
+        width: 65%;
+        margin: auto;
+
+        @include atSmall{
+            width: 17.8125rem;
+        }
+    }
+
+    &__btn-scroll{
+        font-size: 1.5rem;
+        cursor: pointer;
     }
 }

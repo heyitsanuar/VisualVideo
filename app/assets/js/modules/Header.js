@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
+import smothScroll from 'jquery-smooth-scroll';
 
 class Header {
     constructor(){
@@ -16,6 +17,11 @@ class Header {
         this.headerMenu = $('#header-menu');
         this.headerWaypointTrigger = $('#landing-page');
         this.createHeaderWaypoints();
+
+        //Smooth scrolling
+        this.headerBtnScroll = $('#btn-scroll');
+        this.btnUp = $('#btn-up');
+        this.addSmothScrolling();
 
         this.events();
     }
@@ -60,6 +66,11 @@ class Header {
         }
     }
 
+    //Adds smooth scroll to certain elements
+    addSmothScrolling(){
+        this.headerBtnScroll.smoothScroll();
+        this.btnUp.smoothScroll();
+    }
 }
 
 export default Header;
