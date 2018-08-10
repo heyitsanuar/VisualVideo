@@ -1,19 +1,19 @@
 <?php 
 
 Route::set('inicio', function(){
-    Inicio::CreateView();
+    Home::CreateView('Home');
 });
 
 Route::set('servicios', function(){
-    Servicios::CreateView();
+    Services::CreateView('Services');
 });
 
 Route::set('galeria', function(){
-    Galeria::CreateView();
+    Gallery::CreateView('Gallery');
 });
 
 Route::set('contactanos', function(){
-    Contactanos::CreateView();
+    Contact::CreateView('Contact');
 });
 
 ?>
