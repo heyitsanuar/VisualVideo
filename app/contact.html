@@ -13,7 +13,11 @@
     
     <!-- build:css assets/css/styles.css -->
     <link rel="stylesheet" href="temp/css/styles.css">
-<!-- endbuild -->
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/App.js -->
+    <script src="temp/js/Vendor.js"></script>
+    <!-- endbuild -->
 </head>
 <body>
     <header class="header">
@@ -51,12 +55,12 @@
                     </div>
                 </div>
                 <div class="caracteristica__image">
-                    <img src="assets/img/contact/dvd-cover.png" alt="" class="image">
+                    <img data-src="assets/img/contact/dvd-cover.png" alt="" class="image lazyload">
                 </div>
             </div>
             <div class="caracteristica">
                 <div class="caracteristica__image">
-                    <img src="assets/img/contact/invitation.png" alt="" class="image">
+                    <img data-src="assets/img/contact/invitation.png" alt="" class="image lazyload">
                 </div>
                 <div class="caracteristica__info flex-center">
                     <div class="caracteristica__content">
@@ -75,7 +79,7 @@
     <footer class="footer">
         <section class="contact">
             <div class="contact__image">
-                <img src="assets/img/footer/greet.png" alt="" class="image">
+                <img data-src="assets/img/footer/greet.png" alt="" class="image lazyload">
             </div>
             <div class="contact__form flex-center">
                 <div class="contact__form-container">
