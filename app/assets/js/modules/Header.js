@@ -5,6 +5,7 @@ import smothScroll from 'jquery-smooth-scroll';
 class Header {
     constructor(){
         //Header assets
+        this.header = $('#header');
         this.logo = $('#header-logo');
         this.logoContainer = $('#logo-container');
         this.nav = $('#header-nav');
@@ -16,6 +17,7 @@ class Header {
         //Header waypoint
         this.headerMenu = $('#header-menu');
         this.headerWaypointTrigger = $('#landing-page');
+        this.slider = $('.services__container');
         this.createHeaderWaypoints();
 
         //Smooth scrolling
@@ -23,6 +25,7 @@ class Header {
         this.btnUp = $('#btn-up');
         this.addSmothScrolling();
 
+        console.log(this);
         this.events();
     }
 
@@ -42,6 +45,12 @@ class Header {
             element: this.headerWaypointTrigger[0],
             handler: this.changeHeaderAssets.bind(this),
             offset: '5%'
+        });
+
+        new Waypoint({
+            element: this.slider[0],
+            handler: this.toggleHeader.bind(this),
+            offset: "-10%"
         });
     }
 
@@ -70,6 +79,10 @@ class Header {
     addSmothScrolling(){
         this.headerBtnScroll.smoothScroll();
         this.btnUp.smoothScroll();
+    }
+
+    toggleHeader(){
+        this.header.toggleClass('header--hide');
     }
 }
 
